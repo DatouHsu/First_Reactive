@@ -14,6 +14,8 @@
 		0926A9D01F2F44A300F90773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0926A9CF1F2F44A300F90773 /* Assets.xcassets */; };
 		0926A9D31F2F44A300F90773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0926A9D11F2F44A300F90773 /* LaunchScreen.storyboard */; };
 		0926A9DE1F2F44A400F90773 /* reactivePracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0926A9DD1F2F44A400F90773 /* reactivePracticeTests.m */; };
+		719CB1A41EE5D51D346E7815 /* libPods-reactivePracticeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DB63100D46E4EA26E1DB20 /* libPods-reactivePracticeTests.a */; };
+		E44AE8A3C067F8125251FD10 /* libPods-reactivePractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D5007FA0D43B9D090225BB /* libPods-reactivePractice.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,12 @@
 		0926A9D91F2F44A400F90773 /* reactivePracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reactivePracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0926A9DD1F2F44A400F90773 /* reactivePracticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reactivePracticeTests.m; sourceTree = "<group>"; };
 		0926A9DF1F2F44A400F90773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51D5007FA0D43B9D090225BB /* libPods-reactivePractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactivePractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5131B0A24E42EACADBD4D3 /* Pods-reactivePractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactivePractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reactivePractice/Pods-reactivePractice.debug.xcconfig"; sourceTree = "<group>"; };
+		A132AC8DD8A5DDC9A90DDFCA /* Pods-reactivePracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactivePracticeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reactivePracticeTests/Pods-reactivePracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB5C40B332D03C6D2900793B /* Pods-reactivePractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactivePractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-reactivePractice/Pods-reactivePractice.release.xcconfig"; sourceTree = "<group>"; };
+		DF1560A1E070394490E76A20 /* Pods-reactivePracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactivePracticeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-reactivePracticeTests/Pods-reactivePracticeTests.release.xcconfig"; sourceTree = "<group>"; };
+		E5DB63100D46E4EA26E1DB20 /* libPods-reactivePracticeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactivePracticeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E44AE8A3C067F8125251FD10 /* libPods-reactivePractice.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719CB1A41EE5D51D346E7815 /* libPods-reactivePracticeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +76,8 @@
 				0926A9C21F2F44A300F90773 /* reactivePractice */,
 				0926A9DC1F2F44A400F90773 /* reactivePracticeTests */,
 				0926A9C11F2F44A300F90773 /* Products */,
+				6A109B688A9597850B9245BF /* Pods */,
+				2F8ACDE723BB9B0533CBD8EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +123,26 @@
 			path = reactivePracticeTests;
 			sourceTree = "<group>";
 		};
+		2F8ACDE723BB9B0533CBD8EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51D5007FA0D43B9D090225BB /* libPods-reactivePractice.a */,
+				E5DB63100D46E4EA26E1DB20 /* libPods-reactivePracticeTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A109B688A9597850B9245BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D5131B0A24E42EACADBD4D3 /* Pods-reactivePractice.debug.xcconfig */,
+				AB5C40B332D03C6D2900793B /* Pods-reactivePractice.release.xcconfig */,
+				A132AC8DD8A5DDC9A90DDFCA /* Pods-reactivePracticeTests.debug.xcconfig */,
+				DF1560A1E070394490E76A20 /* Pods-reactivePracticeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0926A9E21F2F44A400F90773 /* Build configuration list for PBXNativeTarget "reactivePractice" */;
 			buildPhases = (
+				19CA6776D83C26A94639C0AC /* [CP] Check Pods Manifest.lock */,
 				0926A9BC1F2F44A300F90773 /* Sources */,
 				0926A9BD1F2F44A300F90773 /* Frameworks */,
 				0926A9BE1F2F44A300F90773 /* Resources */,
+				2EA4ACC1C951C985BF5B00B9 /* [CP] Embed Pods Frameworks */,
+				65F11F59C222A360A86DB8E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0926A9E51F2F44A400F90773 /* Build configuration list for PBXNativeTarget "reactivePracticeTests" */;
 			buildPhases = (
+				0782A66494343631380BB548 /* [CP] Check Pods Manifest.lock */,
 				0926A9D51F2F44A400F90773 /* Sources */,
 				0926A9D61F2F44A400F90773 /* Frameworks */,
 				0926A9D71F2F44A400F90773 /* Resources */,
+				4154E609DF7C7A0A0DF4C389 /* [CP] Embed Pods Frameworks */,
+				74E9957E167B105E0CC56FEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +245,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0782A66494343631380BB548 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		19CA6776D83C26A94639C0AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2EA4ACC1C951C985BF5B00B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reactivePractice/Pods-reactivePractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4154E609DF7C7A0A0DF4C389 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reactivePracticeTests/Pods-reactivePracticeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65F11F59C222A360A86DB8E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reactivePractice/Pods-reactivePractice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74E9957E167B105E0CC56FEF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reactivePracticeTests/Pods-reactivePracticeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0926A9BC1F2F44A300F90773 /* Sources */ = {
@@ -351,6 +482,7 @@
 		};
 		0926A9E31F2F44A400F90773 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5131B0A24E42EACADBD4D3 /* Pods-reactivePractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = reactivePractice/Info.plist;
@@ -362,6 +494,7 @@
 		};
 		0926A9E41F2F44A400F90773 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB5C40B332D03C6D2900793B /* Pods-reactivePractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = reactivePractice/Info.plist;
@@ -373,6 +506,7 @@
 		};
 		0926A9E61F2F44A400F90773 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A132AC8DD8A5DDC9A90DDFCA /* Pods-reactivePracticeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = reactivePracticeTests/Info.plist;
@@ -385,6 +519,7 @@
 		};
 		0926A9E71F2F44A400F90773 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1560A1E070394490E76A20 /* Pods-reactivePracticeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = reactivePracticeTests/Info.plist;
