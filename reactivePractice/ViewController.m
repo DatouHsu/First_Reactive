@@ -17,15 +17,23 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+
   [self.textField.rac_textSignal subscribeNext:^(id x) {
     NSLog(@"%@", x);
   }];
+
+  RACSignal *signal = [self creatSignal];
+  [signal subscribeNext:^(id x) {
+    NSLog(@"!!!!!!!!!!");
+  }];
 }
 
-
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+- (RACSignal *)creatSignal {
+  return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+    NSLog(@"signal created");
+    [subscriber sendNext:nil];
+    return nil;
+  }];
 }
 
 
