@@ -14,6 +14,7 @@
 		0926A9D01F2F44A300F90773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0926A9CF1F2F44A300F90773 /* Assets.xcassets */; };
 		0926A9D31F2F44A300F90773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0926A9D11F2F44A300F90773 /* LaunchScreen.storyboard */; };
 		0926A9DE1F2F44A400F90773 /* reactivePracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0926A9DD1F2F44A400F90773 /* reactivePracticeTests.m */; };
+		0984AD8E1F30F72B00A5C865 /* reactiveSignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0984AD8D1F30F72B00A5C865 /* reactiveSignInService.m */; };
 		719CB1A41EE5D51D346E7815 /* libPods-reactivePracticeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DB63100D46E4EA26E1DB20 /* libPods-reactivePracticeTests.a */; };
 		E44AE8A3C067F8125251FD10 /* libPods-reactivePractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D5007FA0D43B9D090225BB /* libPods-reactivePractice.a */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,8 @@
 		0926A9D91F2F44A400F90773 /* reactivePracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reactivePracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0926A9DD1F2F44A400F90773 /* reactivePracticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reactivePracticeTests.m; sourceTree = "<group>"; };
 		0926A9DF1F2F44A400F90773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0984AD8C1F30F72B00A5C865 /* reactiveSignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reactiveSignInService.h; sourceTree = "<group>"; };
+		0984AD8D1F30F72B00A5C865 /* reactiveSignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reactiveSignInService.m; sourceTree = "<group>"; };
 		51D5007FA0D43B9D090225BB /* libPods-reactivePractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactivePractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5131B0A24E42EACADBD4D3 /* Pods-reactivePractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactivePractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reactivePractice/Pods-reactivePractice.debug.xcconfig"; sourceTree = "<group>"; };
 		A132AC8DD8A5DDC9A90DDFCA /* Pods-reactivePracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactivePracticeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reactivePracticeTests/Pods-reactivePracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				0926A9C71F2F44A300F90773 /* AppDelegate.m */,
 				0926A9C91F2F44A300F90773 /* ViewController.h */,
 				0926A9CA1F2F44A300F90773 /* ViewController.m */,
+				0984AD8C1F30F72B00A5C865 /* reactiveSignInService.h */,
+				0984AD8D1F30F72B00A5C865 /* reactiveSignInService.m */,
 				0926A9CC1F2F44A300F90773 /* Main.storyboard */,
 				0926A9CF1F2F44A300F90773 /* Assets.xcassets */,
 				0926A9D11F2F44A300F90773 /* LaunchScreen.storyboard */,
@@ -346,6 +351,7 @@
 			files = (
 				0926A9CB1F2F44A300F90773 /* ViewController.m in Sources */,
 				0926A9C81F2F44A300F90773 /* AppDelegate.m in Sources */,
+				0984AD8E1F30F72B00A5C865 /* reactiveSignInService.m in Sources */,
 				0926A9C51F2F44A300F90773 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
