@@ -68,6 +68,63 @@
        [self performSegueWithIdentifier:@"signInSuccess" sender:self];
      }
    }];
+
+  // example 1
+  __block int num = 0;
+  RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id  subscriber) {
+    num++;
+    NSLog(@"Increment num to: %i", num);
+    [subscriber sendNext:@(num)];
+    return nil;
+  }];
+
+  NSLog(@"Start subscriptions");
+
+  // Subscriber 1 (S1)
+  [signal subscribeNext:^(id x) {
+    NSLog(@"S1: %@", x);
+  }];
+
+  // Subscriber 2 (S2)
+  [signal subscribeNext:^(id x) {
+    NSLog(@"S2: %@", x);
+  }];
+
+  // Subscriber 3 (S3)
+  [signal subscribeNext:^(id x) {
+    NSLog(@"S3: %@", x);
+  }];
+
+
+  // example 2
+
+  RACSubject *letters = [RACSubject subject];
+  RACSignal *signal1 = letters;
+
+  NSLog(@"Subscribe S1");
+  [signal1 subscribeNext:^(id x) {
+    NSLog(@"S1: %@", x);
+  }];
+
+  NSLog(@"Send A");
+  [letters sendNext:@"A"];
+  NSLog(@"Send B");
+  [letters sendNext:@"B"];
+
+  NSLog(@"Subscribe S2");
+  [signal1 subscribeNext:^(id x) {
+    NSLog(@"S2: %@", x);
+  }];
+
+  NSLog(@"Send C");
+  [letters sendNext:@"C"];
+  NSLog(@"Send D");
+  [letters sendNext:@"D"];
+
+  NSLog(@"Subscribe S3");
+  [signal1 subscribeNext:^(id x) {
+    NSLog(@"S3: %@", x);
+  }];
 }
 
 - (BOOL)isValidUsername:(NSString *)username {
